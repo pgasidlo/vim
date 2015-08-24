@@ -19,7 +19,7 @@ set wildmenu
 
 if has("statusline") && !&cp
   set laststatus=2
-  set statusline=%5(#%n%)\ \|\ %f\ %{fugitive#statusline()}\ %m\ %r\ %=%03b\ [0x%02B]\ \|\ Col:\ %-5v\ \|\ Line:\ %-10(%l/%L%)\ %6([%p%%]%)
+  set statusline=%5(#%n%)\ \|\ %f\ %m\ %r\ %=%03b\ [0x%02B]\ \|\ Col:\ %-5v\ \|\ Line:\ %-10(%l/%L%)\ %6([%p%%]%)
 endif
 
 set hidden
