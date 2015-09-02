@@ -1,3 +1,5 @@
+filetype plugin on
+
 execute pathogen#infect()
 call pathogen#helptags()
 
@@ -79,8 +81,9 @@ nmap S <Plug>(easymotion-s2)
 " map <Leader>h <Plug>(easymotion-linebackward)
 " let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
 
-" Po otwarciu nowego bufora przejście w tryb INS
-autocmd BufNewFile * startinsert
+" StripWhitespace
+nmap <leader>wt :ToggleWhitespace<CR>
+nmap <leader>ws :StripWhitespace<CR>
 
 " Mapowanie Ctrl-B do szybkiego sprawdzania składni
 autocmd BufNewFile,BufRead *.php map <C-B> :!php5 -l %<CR>
@@ -89,7 +92,7 @@ autocmd BufNewFile,BufRead *.pl map <C-B> :!perl -c %<CR>
 
 " Kolory
 highlight Search     guibg=Grey
-
+highlight ExtraWhitespace ctermbg=1 guibg=Red
 highlight DiffAdd    term=bold                           ctermfg=7 ctermbg=4           guibg=DarkBlue guifg=White
 highlight DiffDelete term=bold                           ctermfg=7 ctermbg=4           guibg=DarkBlue guifg=White
 highlight DiffChange term=bold     cterm=bold            ctermfg=7 ctermbg=4 guibg=DarkBlue guifg=White
