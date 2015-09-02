@@ -13,6 +13,6 @@
 [submodule "bundle/php-indenting-with-html"]
 	path = bundle/php-indenting-with-html
 	url = https://github.com/captbaritone/better-indent-support-for-php-with-html
-[submodule "/home/quaker/.vim/bundle/whitespace"]
-	path = /home/quaker/.vim/bundle/whitespace
+[submodule "bundle/whitespace"]
+	path = bundle/whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace
