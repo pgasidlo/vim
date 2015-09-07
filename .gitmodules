@@ -11,7 +11,7 @@
 	path = bundle/easymotion
 	url = http://github.com/easymotion/vim-easymotion
 [submodule "bundle/php-indenting-with-html"]
-	path = bundle/php-indenting-with-html
+	path = bundle/better-indent-support-for-php-with-html
 	url = https://github.com/captbaritone/better-indent-support-for-php-with-html
 [submodule "bundle/whitespace"]
 	path = bundle/whitespace
