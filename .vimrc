@@ -32,6 +32,8 @@ set fdm=syntax
 set encoding=utf-8
 
 set number
+" \hs - włącza/wyłacza wyświetlanie wg. względnych lini
+nmap <leader>rn :set relativenumber! relativenumber?<CR>
 set nowrap
 " \tw - włącza/wyłacza zawijanie
 nmap <silent> <leader>tw :set invwrap<CR>:set wrap?<CR>
