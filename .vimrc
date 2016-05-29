@@ -13,6 +13,7 @@ set backspace=indent,eol,start
 
 set gfn=Monospace\ 9
 set guioptions=m
+set showtabline=2
 
 set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
 
@@ -105,3 +106,12 @@ highlight DiffAdd    term=bold                           ctermfg=7 ctermbg=4    
 highlight DiffDelete term=bold                           ctermfg=7 ctermbg=4           guibg=DarkBlue guifg=White
 highlight DiffChange term=bold     cterm=bold            ctermfg=7 ctermbg=4 guibg=DarkBlue guifg=White
 highlight DiffText   term=reverse  cterm=bold,underline  ctermfg=7 ctermbg=4 guibg=DarkBlue guifg=White gui=underline
+
+" Kopiuj-Wytnij-Wklej
+vnoremap <S-Del> "+x
+vnoremap <C-Insert> "+y
+map <S-Insert>  	"+gP
+
+" ChooseWin
+nmap - <Plug>(choosewin)
+let g:choosewin_overlay_enable = 1

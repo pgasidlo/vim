@@ -16,3 +16,9 @@
 [submodule "bundle/better-indent-support-for-php-with-html"]
 	path = bundle/better-indent-support-for-php-with-html
 	url = https://github.com/captbaritone/better-indent-support-for-php-with-html
+[submodule "bundle/vim-abolish"]
+	path = bundle/vim-abolish
+	url = https://github.com/tpope/vim-abolish.git
+[submodule "bundle/vim-choosewin"]
+	path = bundle/vim-choosewin
+	url = https://github.com/t9md/vim-choosewin
